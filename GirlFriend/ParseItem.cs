@@ -103,7 +103,7 @@ namespace GirlFriend
             foreach (var p in _phrases)
             {
                 if (p["phrase"] == userInput)
-                    return;
+                    break;
             }
 
             _phrases.Add(

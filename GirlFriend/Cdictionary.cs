@@ -138,7 +138,7 @@ namespace GirlFriend
             }
 
             File.WriteAllLines(
-                @"dics\test_pattern.txt",
+                @"dics\pattern.txt",
                 patternLine,
                 System.Text.Encoding.UTF8
                 );

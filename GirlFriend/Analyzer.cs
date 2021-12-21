@@ -31,7 +31,7 @@ namespace GirlFriend
 
         public static Match KeyWordCheck(string part)
         {
-            Regex rgx = new("名詞,（一般|固有名詞|サ変接続|形容動詞語幹）");
+            Regex rgx = new("名詞,(一般|固有名詞|サ変接続|形容動詞語幹)");
             Match m = rgx.Match(part);
             return m;
         }

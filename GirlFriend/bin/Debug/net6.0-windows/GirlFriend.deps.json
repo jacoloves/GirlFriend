@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "GirlFriend/1.0.0": {
+        "dependencies": {
+          "MeCab.DotNet": "0.0.40"
+        },
+        "runtime": {
+          "GirlFriend.dll": {}
+        }
+      },
+      "MeCab.DotNet/0.0.40": {
+        "runtime": {
+          "lib/net5.0/MeCab.DotNet.dll": {
+            "assemblyVersion": "0.0.40.0",
+            "fileVersion": "2021.3.1.41924"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GirlFriend/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MeCab.DotNet/0.0.40": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PeH8Sexp1wIGkmfC3AoMp6KWYuEvuUAO1UgiVC4LEiHrRfW5n/SrPxAs+GBdIprwC/dcnceZm/cyPp4mXpzymw==",
+      "path": "mecab.dotnet/0.0.40",
+      "hashPath": "mecab.dotnet.0.0.40.nupkg.sha512"
+    }
+  }
+}

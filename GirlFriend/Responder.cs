@@ -18,7 +18,7 @@ namespace GirlFriend
             Cdictionary = dic;
         }
 
-        public virtual string Response(string input, int mood)
+        public virtual string Response(string input, int mood, List<string[]> parts)
         {
             return "";
         }

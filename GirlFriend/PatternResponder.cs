@@ -12,7 +12,7 @@ namespace GirlFriend
         { 
         }
 
-        public override string Response(string input, int mood)
+        public override string Response(string input, int mood, List<string[]> parts)
         {
             foreach (ParseItem parseItem in Cdictionary.Pattern)
             {

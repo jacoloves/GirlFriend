@@ -15,6 +15,7 @@ namespace GirlFriend
         private RandomResponder _res_random;
         private RepeatResponder _res_repeat;
         private PatternResponder _res_pattern;
+        private TemplateResponder _res_template;
         private Responder _responder;
 
         public string Name
@@ -35,6 +36,7 @@ namespace GirlFriend
             _res_repeat = new RepeatResponder("Repeat", _dictionary);
             _res_random = new RandomResponder("Random", _dictionary);
             _res_pattern = new PatternResponder("Pattern", _dictionary);
+            _res_template = new TemplateResponder("Template", _dictionary);
             _responder = new Responder("Responder", _dictionary);
         }
 
@@ -48,8 +50,10 @@ namespace GirlFriend
             
             if (Regex.IsMatch(input, "メリークリスマス[!|！]*"))
                 _responder = _res_pattern;
-            else if (num < 6)
+            else if (num < 4)
                 _responder = _res_pattern;
+            else if (num < 7)
+                _responder = _res_template;
             else if(num < 9)
                 _responder = _res_random;
             else
@@ -57,7 +61,9 @@ namespace GirlFriend
 
             string resp = _responder.Response(
                 input,
-                _emotion.Mood);
+                _emotion.Mood,
+                parts
+                );
 
             _dictionary.Study(input, parts);
 
